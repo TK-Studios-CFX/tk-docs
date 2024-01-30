@@ -4,51 +4,157 @@
 
 > TK-Lib is the core library for all TK Studios resources.
 
-## Importing TK-Lib
+## Getting Started
+
+### Importing tk-lib
+
+#### GetLib()
 
 ```js
 const Lib = global.exports["tk-lib"].GetLib();
 ```
 
-## Notifications
+## Lib.Functions
+
+### Logger
+
+#### Logger()
+
+```js
+/**
+ * Creates a new Logger instance.
+ *
+ * @param {string} resourceName - The name of the resource.
+ * @param {string} fileName - The name of the file.
+ */
+const Logger = Lib.Functions.Logger(GetCurrentResourceName(), "Main");
+```
+
+#### Logger.log()
+
+```js
+Logger.log("Hello World with TK-Lib");
+```
+
+#### Logger.warn()
+
+```js
+Logger.warn("Hello World with TK-Lib");
+```
+
+#### Logger.error()
+
+```js
+Logger.error("Hello World with TK-Lib");
+```
+
+#### Logger.success()
+
+```js
+Logger.success("Hello World with TK-Lib");
+```
+
+#### Logger.alert()
+
+```js
+Logger.alert("Hello World with TK-Lib");
+```
+
+#### Logger.debug()
+
+> Debug logs are only visible if `Config.Debug` is set to `true` in `tk-lib`
+
+```js
+Logger.debug("Hello World with TK-Lib");
+```
+
+#### Logger.trace()
+
+> Trace logs trace the call stack showing where the log was triggered from.
+
+```js
+Logger.trace("Hello World with TK-Lib");
+```
+
+### Notifications
+
+#### Notify()
 
 ```js
 Lib.Functions.Notify(3, "success", "Test?", 3000); // Send an error notification to player 3 lasting for 3 seconds.
 Lib.Functions.Notify(3, "error", "Do ya like jazz?", Lib.Time.Second * 5); // Send an error notification to player 3 lasting for 5 seconds.
 ```
 
-## Logger
+### Items
 
-```js
-const Logger = Lib.Functions.Logger("TK-Test", "Demo");
-
-Logger.log("Hello World with TK-Lib");
-Logger.warn("Warning with TK-Lib");
-Logger.error("Error Message with TK-Lib");
-Logger.success("Success Message with TK-Lib");
-Logger.alert("Alert with TK-Lib");
-Logger.debug("Debug Only Mode with TK-Lib");
-Logger.trace("Stack Trace with TK-Lib");
-```
-
-## Items
+#### HasItem()
 
 ```js
 let HasItem = Lib.Functions.HasItem(3, "weapon_combatpistol", 1); // Returns true if Server ID 3 has a combat pistol.
+```
 
+#### AddItem()
+
+```js
 Lib.Functions.AddItem(3, "weapon_hatchet", 1); // Gives a hatchet to Server ID 3.
 Lib.Functions.AddItem(3, "weapon_combatpistol", 1, 5, {}); // Gives 1 combat pistol to Server ID 3 in slot 5 with no metadata.
+```
 
+#### RemoveItem()
+
+```js
 let ItemRemoved = Lib.Functions.RemoveItem(3, "weapon_hatchet", 1); // Removes 1 hatchet from Server ID 3.
 ```
 
-## Player List
+### Money
+
+#### GetMoney()
+
+```js
+Lib.Functions.GetMoney(3, "cash");
+```
+
+#### SetMoney()
+
+```js
+Lib.Functions.SetMoney(3, "cash", 100); // Set player's 'cash' to 100
+```
+
+#### AddMoney()
+
+```js
+Lib.Functions.AddMoney(3, "bank", 150); // Gives player $150 'bank' money
+```
+
+#### RemoveMoney()
+
+```js
+let Success = Lib.Functions.RemoveMoney(3, "bank", 150); // Removes $150 from player, returns false if player does not have enough money.
+```
+
+### Moderation
+
+#### KickPlayer()
+
+```js
+Lib.Functions.KickPlayer(3, "Attempted Abuse"); // Kick Server ID 3 for 'Attempted Abuse'
+```
+
+### Players
+
+#### GetPlayersArray()
 
 ```js
 let PlayersList = Lib.Functions.GetPlayersArray(); // [ 3, 14, 24 ] Array of Server IDs.
 ```
 
-## Routing Buckets
+#### GetPlayerIdentifier()
+
+```js
+let DiscordID = Lib.Functions.GetPlayerIdentifier(3, "discord"); // Gets the discord identifier of Server ID 3.
+```
+
+## Lib.Buckets
 
 ```js
 // Players
@@ -64,15 +170,7 @@ let vehicle = 14281;
 Lib.Buckets.SetEntityBucket(vehicle, BucketID);
 ```
 
-## Player Identifiers
-
-```js
-let DiscordID = Lib.Functions.GetPlayerIdentifier(3, "discord"); // Gets the discord identifier of Server ID 3.
-```
-
----
-
-## Time
+## Lib.Time
 
 ```js
 const Second = Lib.Time.Second; // 1 Second in MS
@@ -91,64 +189,93 @@ const ReadableDateTimeString = Lib.Time.EpochToReadableDateTimeString(CurrentEpo
 const ReadableTimeString = Lib.Time.MSToReadableTimeString(Hour * 3); // 3h 0m 0s
 ```
 
----
+## Lib.Maths
 
-## Maths
+### Arrays
+
+#### AverageArray()
 
 ```js
-let DummyArray = [1, 2, 3];
+Lib.Maths.AverageArray([1, 2, 3]); // 2
+```
 
-Lib.Maths.AverageArray(DummyArray); // 2
-Lib.Maths.MinArray(DummyArray); // 1
-Lib.Maths.MaxArray(DummyArray); // 3
+#### MinArray()
 
+```js
+Lib.Maths.MinArray([1, 2, 3]); // 1
+```
+
+#### MaxArray()
+
+```js
+Lib.Maths.MaxArray([1, 2, 3]); // 3
+```
+
+### Vectors
+
+#### Vector2()
+
+```js
 let Vec2 = Lib.Maths.Vector2(0, 0); // X, Y
-let Vec4 = Lib.Maths.Vector3(4, 4, 4); // X, Y, Z
-let Vec4 = Lib.Maths.Vector4(4, 4, 4, 270); // X, Y, Z, W
+```
 
+#### Vector3()
+
+```js
+let Vec4 = Lib.Maths.Vector3(4, 4, 4); // X, Y, Z
+```
+
+#### Vector4()
+
+```js
+let Vec4 = Lib.Maths.Vector4(4, 4, 4, 270); // X, Y, Z, W
+```
+
+### Distance
+
+#### Distance2D()
+
+```js
+let Pos1 = Lib.Maths.Vector2(0, 0); // X, Y
+let Pos2 = Lib.Maths.Vector2(4, 4); // X, Y
+
+Lib.Maths.Distance2D(Pos1.x, Pos1.y, Pos2.x, Pos2.y); // Distance between 2 X,Y Coordinate Sets
+```
+
+#### DistanceVector2()
+
+```js
+let Pos1 = Lib.Maths.Vector2(0, 0); // X, Y
+let Pos2 = Lib.Maths.Vector2(4, 4); // X, Y
+
+Lib.Maths.DistanceVector2(Pos1, Pos2); // Distance between 2 vector2 coordinates.
+```
+
+#### Distance3D()
+
+```js
 let Pos1 = Lib.Maths.Vector3(0, 0, 0); // X, Y, Z
 let Pos2 = Lib.Maths.Vector3(4, 4, 4); // X, Y, Z
 
-Lib.Maths.Distance2D(Pos1.x, Pos1.y, Pos2.x, Pos2.y); // Distance between 2 X,Y Coordinate Sets
-Lib.Maths.DistanceVector2(Pos1, Pos2); // Distance between 2 vector2 coordinates.
-
 Lib.Maths.Distance3D(Pos1.x, Pos1.y, Pos1.z, Pos2.x, Pos2.y, Pos2.z); // Distance between 2 X,Y,Z Coordinate Sets (X1, Y1, Z1, X2, Y2, Z2)
+```
+
+#### DistanceVector3()
+
+```js
+let Pos1 = Lib.Maths.Vector3(0, 0, 0); // X, Y, Z
+let Pos2 = Lib.Maths.Vector3(4, 4, 4); // X, Y, Z
+
 Lib.Maths.DistanceVector3(Pos1, Pos2); // Distance between 2 vector3 coordinates.
 ```
 
----
+### Currency
 
-## Currency Formatting
+#### FormatAsCurrency()
 
-Accepted Currencies are:
-
-```md
-USD, EUR, GBP, AUD, CAD, JPY, CHF, CNY, SEK, NZD, NOK, MXN, SGD, HKD, KRW, TRY, INR, RUB, BRL, ZAR, PLN
-```
+> Accepted Currencies are:
+> USD, EUR, GBP, AUD, CAD, JPY, CHF, CNY, SEK, NZD, NOK, MXN, SGD, HKD, KRW, TRY, INR, RUB, BRL, ZAR, PLN
 
 ```js
-let Amount = 5000;
-let Currency = "USD";
-let FormattedCurrency = Lib.Maths.FormatAsCurrency(Amount, Currency); // $5,000.00
-```
-
----
-
-## Money
-
-```js
-let source = 3;
-
-let PlayerCash = Lib.Functions.GetMoney(3, "cash"); // Get players 'cash'
-Lib.Functions.SetMoney(3, "cash", 100); // Set player's 'cash' to 100
-Lib.Functions.AddMoney(3, "bank", 150); // Gives player $150 'bank' money
-let Success = Lib.Functions.RemoveMoney(3, "bank", 150); // Removes $150 from player, returns false if player does not have enough money.
-```
-
----
-
-## Moderation
-
-```js
-Lib.Functions.KickPlayer(3, "Attempted Abuse"); // Kick Server ID 3 for 'Attempted Abuse'
+Lib.Maths.FormatAsCurrency(5000, "USD"); // $5,000.00
 ```
