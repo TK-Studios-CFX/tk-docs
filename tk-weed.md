@@ -137,7 +137,7 @@ Config.Planter.Pickup.Anim = "base_female"; // Anim for picking up a weed plante
 
 ### Weed Planters
 
-> Permenant weed planters can only be placed and removed by commands. This allows you to set up public weed farms around your server to help new players get started.
+> Permanent weed planters can only be placed and removed with commands. This allows you to set up public weed farms around your server to help new players get started.
 
 ```js
 // Weed Planters Config - Tiers are Permenant, Basic, Enhanced and Advanced.
@@ -152,27 +152,27 @@ Config.Planters.Basic.RGB = [38, 255, 49]; // R, G, B values out of 255.
 
 ### Weed Tables
 
-> Permenant weed tables can only be placed and removed by commands. This allows you to set up public weed farms around your server to help new players get started.
+> Permanent weed tables can only be placed and removed with commands. This allows you to set up public weed farms around your server to help new players get started.
 
 ```js
-Config.Tables = {};
+Config.Tables = {}; // Do Not Change
 
-Config.Tables.Basic = {};
+Config.Tables.Basic = {}; // Do Not Change
 Config.Tables.Basic.Item = "weed_table_basic";
 Config.Tables.Basic.Name = "Basic Weed Table";
 Config.Tables.Basic.RGB = [38, 255, 49];
-Config.Tables.Basic.Use = {};
+Config.Tables.Basic.Use = {}; // Do Not Change
 Config.Tables.Basic.Use.Duration = 5000; // Time it takes to process a batch of weed in MS
 Config.Tables.Basic.Use.MaxConcurrentProcesses = 2;
 Config.Tables.Basic.Use.RequiredBuds = 3;
 Config.Tables.Basic.Use.OutputBaggys = 1;
 Config.Tables.Basic.Use.AnimDict = "mini@repair"; // Animation Dictionary for processing a batch of weed
 Config.Tables.Basic.Use.Anim = "fixing_a_ped"; // Animation for processing a batch of weed
-Config.Tables.Basic.Place = {};
+Config.Tables.Basic.Place = {}; // Do Not Change
 Config.Tables.Basic.Place.Duration = 5000;
 Config.Tables.Basic.Place.AnimDict = "mini@repair"; // Animation Dictionary for placing a weed table
 Config.Tables.Basic.Place.Anim = "fixing_a_ped"; // Animation for placing a basic weed table
-Config.Tables.Basic.Pickup = {};
+Config.Tables.Basic.Pickup = {}; // Do Not Change
 Config.Tables.Basic.Pickup.Duration = 5000;
 Config.Tables.Basic.Pickup.AnimDict = "mini@repair"; // Animation Dictionary for picking up a weed table
 Config.Tables.Basic.Pickup.Anim = "fixing_a_ped"; // Animation for picking up a basic weed table
@@ -180,28 +180,28 @@ Config.Tables.Basic.Pickup.Anim = "fixing_a_ped"; // Animation for picking up a 
 
 ### Kitchens
 
-> Permenant weed kitchens can only be placed and removed by commands. This allows you to set up public weed farms around your server to help new players get started.
+> Permanent weed kitchens can only be placed and removed with commands. This allows you to set up public weed farms around your server to help new players get started.
 
 ```js
-Config.Kitchens = {};
+Config.Kitchens = {}; // Do Not Change
 
-Config.Kitchens.Basic = {};
-Config.Kitchens.Basic.Item = "weed_kitchen_basic";
-Config.Kitchens.Basic.Name = "Basic Weed Kitchen";
-Config.Kitchens.Basic.RGB = [38, 255, 49];
-Config.Kitchens.Basic.Use = {};
+Config.Kitchens.Basic = {}; // Do Not Change
+Config.Kitchens.Basic.Item = "weed_kitchen_basic"; // Item name for basic weed kitchen
+Config.Kitchens.Basic.Name = "Basic Weed Kitchen"; // Name for notifications and progress bars
+Config.Kitchens.Basic.RGB = [38, 255, 49]; // R, G, B values out of 255
+Config.Kitchens.Basic.Use = {}; // Do Not Change
 Config.Kitchens.Basic.Use.Duration = 5000; // Time it takes to process a batch of weed in MS
-Config.Kitchens.Basic.Use.MaxConcurrentProcesses = 2;
-Config.Kitchens.Basic.Use.RequiredBuds = 10;
-Config.Kitchens.Basic.Use.OutputOil = 1;
+Config.Kitchens.Basic.Use.MaxConcurrentProcesses = 2; // Maximum batches to bake simultaneously
+Config.Kitchens.Basic.Use.RequiredBuds = 10; // Required buds to extract weed oil
+Config.Kitchens.Basic.Use.OutputOil = 1; // Output oil after extraction process
 Config.Kitchens.Basic.Use.AnimDict = "mini@repair"; //"Animation Dictionary for processing a batch of weed
 Config.Kitchens.Basic.Use.Anim = "fixing_a_ped"; //"Animation for processing a batch of weed
-Config.Kitchens.Basic.Place = {};
-Config.Kitchens.Basic.Place.Duration = 5000;
+Config.Kitchens.Basic.Place = {}; // Do Not Change
+Config.Kitchens.Basic.Place.Duration = 5000; // Duration for placing a weed kitchen
 Config.Kitchens.Basic.Place.AnimDict = "mini@repair"; //"Animation Dictionary for placing a weed table
 Config.Kitchens.Basic.Place.Anim = "fixing_a_ped"; //"Animation for placing a basic weed table
-Config.Kitchens.Basic.Pickup = {};
-Config.Kitchens.Basic.Pickup.Duration = 5000;
+Config.Kitchens.Basic.Pickup = {}; // Do Not Change
+Config.Kitchens.Basic.Pickup.Duration = 5000; // Duration for picking up a weed kitchen
 Config.Kitchens.Basic.Pickup.AnimDict = "mini@repair"; //"Animation Dictionary for picking up a weed table
 Config.Kitchens.Basic.Pickup.Anim = "fixing_a_ped"; //"Animation for picking up a basic weed table
 ```
@@ -209,43 +209,39 @@ Config.Kitchens.Basic.Pickup.Anim = "fixing_a_ped"; //"Animation for picking up 
 ### Planting
 
 ```js
-// Planting Config
-Config.Planting = {};
+Config.Planting = {}; // Do Not Change
 Config.Planting.Duration = 8000; // Time in MS to plant weed seed.
-Config.Planting.AnimDict = "amb@world_human_gardener_plant@female@base";
-Config.Planting.Anim = "base_female";
+Config.Planting.AnimDict = "amb@world_human_gardener_plant@female@base"; // Anim Dict for planting a seed
+Config.Planting.Anim = "base_female"; // Anim for planting a seed
 ```
 
 ### Rolling Joints
 
 ```js
-// Joints Config
-Config.Joints = {};
-Config.Joints.Duration = 5000;
-Config.Joints.RequiredBaggies = 1;
-Config.Joints.AnimDict = "mp_arresting";
-Config.Joints.Anim = "a_uncuff";
+Config.Joints = {}; // Do Not Change
+Config.Joints.Duration = 5000; // Duration for rolling a joint
+Config.Joints.RequiredBaggies = 1; // Required baggies to roll a joint
+Config.Joints.AnimDict = "mp_arresting"; // Anim Dict for rolling a joint
+Config.Joints.Anim = "a_uncuff"; // Anim for rolling a joint
 ```
 
 ### Rolling Blunts
 
 ```js
-// Blunts Config
-Config.Blunts = {};
-Config.Blunts.Duration = 5000;
-Config.Blunts.RequiredBaggies = 3;
-Config.Blunts.AnimDict = "mp_arresting";
-Config.Blunts.Anim = "a_uncuff";
+Config.Blunts = {}; // Do Not Change
+Config.Blunts.Duration = 5000; // Duration for rolling a blunt
+Config.Blunts.RequiredBaggies = 3; // Required baggies for rolling a blunt
+Config.Blunts.AnimDict = "mp_arresting"; // Anim Dict for rolling a blunt
+Config.Blunts.Anim = "a_uncuff"; // Anim for rolling a blunt
 ```
 
 ### Emptying Pots
 
 ```js
-// Emptying Pots Config
-Config.EmptyPot = {};
-Config.EmptyPot.Duration = 2500;
-Config.EmptyPot.AnimDict = "amb@world_human_gardener_plant@female@base";
-Config.EmptyPot.Anim = "base_female";
+Config.EmptyPot = {}; // Do Not Change
+Config.EmptyPot.Duration = 2500; // Duration for emptying weed planters
+Config.EmptyPot.AnimDict = "amb@world_human_gardener_plant@female@base"; // Anim Dict for emptying weed planters
+Config.EmptyPot.Anim = "base_female"; // Anim for emptying weed planters
 ```
 
 ### Weed Strains
@@ -256,18 +252,17 @@ Config.EmptyPot.Anim = "base_female";
 Config.Strains = [];
 
 Config.Strains.push({
-	name: "Amnesia",
-	item: "weed_amnesia",
-	bud: "weed_amnesia_bud",
-	seed: "weed_amnesia_seed",
-	joint: "weed_amnesia_joint",
-	blunt: "weed_amnesia_blunt",
-	jar: "weed_amnesia_jar",
-
-	oil: "weed_amnesia_oil",
-	brownie: "weed_amnesia_brownie",
-	gummy: "weed_amnesia_gummy",
-	hash: "weed_amnesia_hash",
+	name: "Amnesia", // Name of the strain
+	item: "weed_amnesia", // Item for weed baggy
+	bud: "weed_amnesia_bud", // Item for weed bud
+	seed: "weed_amnesia_seed", // Item for weed seed
+	joint: "weed_amnesia_joint", // Item for joint
+	blunt: "weed_amnesia_blunt", // Item for blunt
+	jar: "weed_amnesia_jar", // Item for jar of bud
+	oil: "weed_amnesia_oil", // Item for jar of extracted oil
+	brownie: "weed_amnesia_brownie", // Item for brownie edible
+	gummy: "weed_amnesia_gummy", // Item for gummy edible
+	hash: "weed_amnesia_hash", // Item for hash
 
 	Effects: {
 		HealthBoost: [10, 20], // Joint vs Blunt values for health boost
@@ -284,8 +279,8 @@ Config.Strains.push({
 	},
 
 	Harvest: {
-		Buds: [1, 7],
-		Seeds: [0, 3],
+		Buds: [1, 7], // [MinimumHarvest, MaximumHarvest] for buds per planter harvest.
+		Seeds: [0, 3], // [MinimumHarvest, MaximumHarvest] for seeds per planter harvest.
 	},
 });
 ```
@@ -322,12 +317,12 @@ Config.Commands.DeletePermenantTable = {}; // Do Not Touch
 Config.Commands.DeletePermenantTable.Command = "DeletePermenantTable"; // Command Name
 Config.Commands.DeletePermenantTable.Ace = "qbdev"; // Permission node for using command.
 
-// Create permenant weed tables around the map for players to use for free.
+// Create permenant weed kitchens around the map for players to use for free.
 Config.Commands.CreatePermenantKitchen = {}; // Do Not Touch
 Config.Commands.CreatePermenantKitchen.Command = "CreatePermenantKitchen"; // Command Name
 Config.Commands.CreatePermenantKitchen.Ace = "qbdev"; // Permission node for using command.
 
-// Delete permenant weed tables
+// Delete permenant weed kitchens
 Config.Commands.DeletePermenantKitchen = {}; // Do Not Touch
 Config.Commands.DeletePermenantKitchen.Command = "DeletePermenantKitchen"; // Command Name
 Config.Commands.DeletePermenantKitchen.Ace = "qbdev"; // Permission node for using command.
