@@ -2,7 +2,36 @@
 
 # TK Weed
 
+> You can enable debugging for TK Studios resources by enabling the `Config.Debug` option in `tk-lib`.
+
 > TK Weed is a highly configurable weed farming, extraction and cooking resource with multiple growth stages, custom props and support for infinite custom strains of weed.
+
+## Install
+
+### 1. Dependencies
+
+TK Weed has 4 dependencies:
+
+- oxmysql (Comes with QBCore)
+- QBCore
+- tk-lib (Available from keymaster)
+- n3-props (Available from keymaster)
+
+### 2. QBCore Items
+
+Copy the config from `/install/items/items.md` to `QBCore/Shared/items.lua`
+
+Copy the images from `/install/images` to your inventory resource.
+
+Ensure `tk-lib/Server/Config/index.js` has the correct inventory configuration option set.
+
+### 3. Starting resources
+
+Ensure that `tk-lib` & `n3-props` are in your resource folder. We reccommend putting all resources in a folder called `[tk-studios]`.
+
+Add `ensure [tk-studios]` to your server.cfg
+
+Reboot your server
 
 ## Config
 
