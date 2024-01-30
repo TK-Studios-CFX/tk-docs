@@ -1,4 +1,6 @@
-# TK Studios | About
+<img style="margin-top: 100px" src="./assets/images/banner.png">
+
+# TK Studios | About Us
 
 ## Introduction
 
