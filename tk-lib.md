@@ -1,6 +1,6 @@
 [Back To Home](/)
 
-# TK-Lib
+# tk-lib
 
 > TK-Lib is the core library for all TK Studios resources.
 

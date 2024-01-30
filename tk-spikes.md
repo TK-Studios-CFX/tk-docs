@@ -1,8 +1,8 @@
 [Back To Home](/)
 
-# tk-crypto
+# tk-spikes
 
-> TK Crypto is still under development. Please keep an eye on our announcements channel for updates!
+> TK Spikes is still under development. Please keep an eye on our announcements channel for updates!
 
 ## Config
 

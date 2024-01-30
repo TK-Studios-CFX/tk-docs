@@ -1,8 +1,8 @@
 [Back To Home](/)
 
-# tk-crypto
+# tk-cryptofarms
 
-> TK Crypto is still under development. Please keep an eye on our announcements channel for updates!
+> TK Crypto Farms is still under development. Please keep an eye on our announcements channel for updates!
 
 ## Config
 
