@@ -4,6 +4,27 @@
 
 > TK-Lib is the core library for all TK Studios resources.
 
+## Install
+
+### 1. Dependencies
+
+TK Weed has 4 dependencies:
+
+- oxmysql (Comes with QBCore)
+- QBCore
+
+### 2. Inventory
+
+Ensure `tk-lib/Server/Config/index.js` has the correct inventory configuration option set.
+
+### 3. Starting resources
+
+Ensure that `tk-lib` is in your resource folder. We reccommend putting all TK Studios resources in a folder called `[tk-studios]`.
+
+Add `ensure [tk-studios]` to your server.cfg
+
+Reboot your server
+
 ## Getting Started
 
 ### Importing tk-lib

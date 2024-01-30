@@ -17,17 +17,17 @@ TK Weed has 4 dependencies:
 - tk-lib (Available from keymaster)
 - n3-props (Available from keymaster)
 
-### 2. QBCore Items
+### 2. Inventory
 
-Copy the config from `/install/items/items.md` to `QBCore/Shared/items.lua`
+Copy the config from `tk-weed/install/items/items.md` to `QBCore/Shared/items.lua`
 
-Copy the images from `/install/images` to your inventory resource.
+Copy the images from `tk-weed/install/images` to your inventory resource.
 
 Ensure `tk-lib/Server/Config/index.js` has the correct inventory configuration option set.
 
 ### 3. Starting resources
 
-Ensure that `tk-lib` & `n3-props` are in your resource folder. We reccommend putting all resources in a folder called `[tk-studios]`.
+Ensure that `tk-lib` & `n3-props` are in your resource folder. We reccommend putting all TK Studios resources in a folder called `[tk-studios]`.
 
 Add `ensure [tk-studios]` to your server.cfg
 
