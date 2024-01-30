@@ -28,7 +28,7 @@
 
 ### NuK3
 
-> Description Not Available
+> NuK3 is a vehicle, model, map, and texture developer based in the US. He has been developing for GTA V for 6-7 years, with more than 3 years being for FiveM
 
 ### Nathan H
 
