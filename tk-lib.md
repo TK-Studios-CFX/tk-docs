@@ -39,6 +39,50 @@ Reboot your server
 const Lib = global.exports["tk-lib"].GetLib();
 ```
 
+### Lib.DB
+
+#### Run()
+
+```js
+/**
+ * Executes a database query.
+ *
+ * @async
+ * @param {string} Query - The SQL query to execute.
+ * @param {Array} [Params] - The parameters to be used in the query.
+ * @returns {Promise<Array>} - The result of the query.
+ */
+await Lib.DB.Run("DELETE FROM ? WHERE id = ?", ["db_name", 1]);
+```
+
+#### Get()
+
+```js
+/**
+ * Executes a database query, returning 1 row or null.
+ *
+ * @async
+ * @param {string} Query - The SQL query to execute.
+ * @param {Array} [Params] - The parameters to be used in the query.
+ * @returns {Promise<Object>} - The result of the query.
+ */
+await Lib.DB.Get("SELECT * FROM ? WHERE id = ?", ["db_name", 1]);
+```
+
+#### All()
+
+```js
+/**
+ * Executes a database query, returning all matching rows.
+ *
+ * @async
+ * @param {string} Query - The SQL query to execute.
+ * @param {Array} [Params] - The parameters to be used in the query.
+ * @returns {Promise<Array[Object]>} - The result of the query.
+ */
+await Lib.DB.All("SELECT * FROM ?", ["db_name"]);
+```
+
 ### Lib.Functions
 
 #### Logger
@@ -99,6 +143,14 @@ Logger.debug("Hello World with TK-Lib");
 
 ```js
 Logger.trace("Hello World with TK-Lib");
+```
+
+#### Timings
+
+##### Wait()
+
+```js
+await Lib.Functions.Wait(500); // Time in MS
 ```
 
 #### Notifications
@@ -371,4 +423,12 @@ Logger.alert("Hello World with TK-Lib");
 
 ```js
 Logger.debug("Hello World with TK-Lib");
+```
+
+#### Timings
+
+##### Wait()
+
+```js
+await Lib.Functions.Wait(500); // Time in MS
 ```
