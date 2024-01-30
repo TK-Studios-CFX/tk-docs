@@ -62,7 +62,7 @@ Logger.alert("Hello World with TK-Lib");
 
 #### Logger.debug()
 
-> Debug logs are only visible if `Config.Debug` is set to `true` in `tk-lib`
+> Debug logs are only visible if `Config.Debug` is set to `true` in `tk-lib/server/config/index.js`
 
 ```js
 Logger.debug("Hello World with TK-Lib");
