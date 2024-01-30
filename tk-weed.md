@@ -2,11 +2,9 @@
 
 # tk-weed
 
-> TK Weed is a highly configurable weed farming, extraction and cooking resource with multiple growth stages, custom props support for infinite custom strains of weed.
+> TK Weed is a highly configurable weed farming, extraction and cooking resource with multiple growth stages, custom props and support for infinite custom strains of weed..
 
 ## Config
-
-> There are no configurable options for this resource
 
 ### Database Config
 
