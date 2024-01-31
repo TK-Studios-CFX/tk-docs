@@ -8,7 +8,7 @@
 
 ### 1. Dependencies
 
-TK Weed has 4 dependencies:
+TK Weed has 2 dependencies:
 
 - oxmysql (Comes with QBCore)
 - QBCore
