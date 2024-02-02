@@ -43,7 +43,7 @@ DELIMITER ;
 > If you encounter issues creating a trigger with sql, you can create it manually in phpMyAdmin using the reference below:
 
 <div class="img-gallery">
-    <img class="img-gallery-item" src="/assets/tk-clockins/trigger.png">
+    <img class="img-gallery-item" src="./assets/tk-clockins/trigger.png">
 </div>
 
 ### 4. Reboot Resource
