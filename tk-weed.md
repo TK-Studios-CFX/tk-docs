@@ -1,20 +1,26 @@
+<meta property="og:type" content="website">
+<meta property="og:title" content="TK Studios | Documentation">
+<meta property="og:url" content="https://docs.tkstudios.store/#/tk-weed">
+<meta property="og:image" content="https://docs.tkstudios.store/assets/tk-weed/banner.png">
+<meta property="og:description" content="TK Weed is a highly configurable weed farming, extraction and cooking resource with multiple growth stages, custom props and support for infinite custom strains of weed.">
+
 [Back To Home](/)
 
 # TK Weed
 
-<img class="img-center" src="./assets/tk-weed/banner.PNG">
+<img class="img-center" src="./assets/tk-weed/banner.png">
 
 <div class="img-gallery">
-	<img class="img-gallery-item" src="./assets/tk-weed/1.PNG">
-	<img class="img-gallery-item" src="./assets/tk-weed/2.PNG">
-	<img class="img-gallery-item" src="./assets/tk-weed/3.PNG">
-	<img class="img-gallery-item" src="./assets/tk-weed/4.PNG">
-	<img class="img-gallery-item" src="./assets/tk-weed/5.PNG">
-	<img class="img-gallery-item" src="./assets/tk-weed/6.PNG">
-	<img class="img-gallery-item" src="./assets/tk-weed/7.PNG">
-	<img class="img-gallery-item" src="./assets/tk-weed/8.PNG">
-	<img class="img-gallery-item" src="./assets/tk-weed/9.PNG">
-	<img class="img-gallery-item" src="./assets/tk-weed/10.PNG">
+	<img class="img-gallery-item" src="./assets/tk-weed/1.png">
+	<img class="img-gallery-item" src="./assets/tk-weed/2.png">
+	<img class="img-gallery-item" src="./assets/tk-weed/3.png">
+	<img class="img-gallery-item" src="./assets/tk-weed/4.png">
+	<img class="img-gallery-item" src="./assets/tk-weed/5.png">
+	<img class="img-gallery-item" src="./assets/tk-weed/6.png">
+	<img class="img-gallery-item" src="./assets/tk-weed/7.png">
+	<img class="img-gallery-item" src="./assets/tk-weed/8.png">
+	<img class="img-gallery-item" src="./assets/tk-weed/9.png">
+	<img class="img-gallery-item" src="./assets/tk-weed/10.png">
 </div>
 
 > TK Weed is a highly configurable weed farming, extraction and cooking resource with multiple growth stages, custom props and support for infinite custom strains of weed.
