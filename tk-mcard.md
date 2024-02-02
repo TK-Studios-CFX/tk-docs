@@ -2,6 +2,10 @@
 
 # tk-mcard
 
+> You can enable debugging for TK Studios resources by enabling the `Config.Debug` option in `tk-lib`.
+
+<img class="img-center" src="./assets/tk-mcard/mcard.PNG">
+
 > TK MCard is a free resource made by TK Studios
 
 ## Install

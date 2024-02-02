@@ -2,6 +2,10 @@
 
 # tk-ragdoll
 
+> You can enable debugging for TK Studios resources by enabling the `Config.Debug` option in `tk-lib`.
+
+<img class="img-center" src="./assets/tk-ragdoll/rag.PNG">
+
 > TK Ragdoll is a free resource made by TK Studios
 
 ## Install

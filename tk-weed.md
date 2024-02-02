@@ -2,9 +2,24 @@
 
 # TK Weed
 
-> You can enable debugging for TK Studios resources by enabling the `Config.Debug` option in `tk-lib`.
+<img class="img-center" src="./assets/tk-weed/banner.PNG">
+
+<div class="img-gallery">
+	<img class="img-gallery-item" src="./assets/tk-weed/1.PNG">
+	<img class="img-gallery-item" src="./assets/tk-weed/2.PNG">
+	<img class="img-gallery-item" src="./assets/tk-weed/3.PNG">
+	<img class="img-gallery-item" src="./assets/tk-weed/4.PNG">
+	<img class="img-gallery-item" src="./assets/tk-weed/5.PNG">
+	<img class="img-gallery-item" src="./assets/tk-weed/6.PNG">
+	<img class="img-gallery-item" src="./assets/tk-weed/7.PNG">
+	<img class="img-gallery-item" src="./assets/tk-weed/8.PNG">
+	<img class="img-gallery-item" src="./assets/tk-weed/9.PNG">
+	<img class="img-gallery-item" src="./assets/tk-weed/10.PNG">
+</div>
 
 > TK Weed is a highly configurable weed farming, extraction and cooking resource with multiple growth stages, custom props and support for infinite custom strains of weed.
+
+> You can enable debugging for TK Studios resources by enabling the `Config.Debug` option in `tk-lib`.
 
 ## Install
 

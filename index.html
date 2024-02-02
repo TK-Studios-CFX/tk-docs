@@ -49,6 +49,39 @@
 					background: rgba(0, 0, 0, 0.1);
 				}
 			}
+
+			img {
+				border-radius: 3px;
+			}
+
+			.img-center {
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+
+				padding: 10px;
+
+				background: rgba(0,0,0,0.1);
+				border-radius: 5px;
+
+				max-width: 70% !important;
+			}
+
+			.img-gallery {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.img-gallery-item {
+				width: 200px;
+				
+				padding: 10px;
+
+				background: rgba(0,0,0,0.1);
+				border-radius: 5px;
+				margin: 10px;
+			}
 		</style>
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
@@ -81,5 +114,6 @@
 		<!-- Docsify v4 -->
 		<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 		<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 	</body>
 </html>
