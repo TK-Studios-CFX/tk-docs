@@ -232,10 +232,42 @@ Lib.Functions.KickPlayer(3, "Attempted Abuse"); // Kick Server ID 3 for 'Attempt
 let PlayersList = Lib.Functions.GetPlayersArray(); // [ 3, 14, 24 ] Array of Server IDs.
 ```
 
+##### GetPlayerIdentifiers()
+
+```js
+/**
+ * Retrieves the identifiers associated with a player.
+ *
+ * @param {string} src - The source of the player.
+ * @returns {string[]} - An array of player identifiers.
+ */
+const Identifier = Lib.Functions.GetPlayerIdentifiers(3); // [ 'fivem:12345', 'discord:148764657107075072', ... ]
+```
+
 ##### GetPlayerIdentifier()
 
 ```js
-let DiscordID = Lib.Functions.GetPlayerIdentifier(3, "discord"); // Gets the discord identifier of Server ID 3.
+/**
+ * Retrieves the player identifier based on the given source and identifier type.
+ *
+ * @param {string} src - The source of the player.
+ * @param {string} identifier - The type of identifier to retrieve.
+ * @returns {string|null} The player identifier, or null if not found.
+ */
+const Identifier = Lib.Functions.GetPlayerIdentifier(3, "discord"); // 'discord:148764657107075072'
+```
+
+##### GetStrippedPlayerIdentifier()
+
+```js
+/**
+ * Retrieves the stripped player identifier based on the given identifier type.
+ *
+ * @param {string} src - The source of the player.
+ * @param {string} identifier - The identifier type.
+ * @returns {string|null} The stripped player identifier, or null if not found.
+ */
+const Identifier = Lib.Functions.GetStrippedPlayerIdentifier(3, "discord"); // '148764657107075072'
 ```
 
 ### Lib.Buckets
