@@ -20,7 +20,7 @@
 
 > TK is a web developer and technician based in the UK. He is the founder of TK Studios and has been developing for FiveM for the last 4-5 years.
 
-<a class="btn" name="button" target="_blank" href="https://tkw.bz">Website</a>
+<a class="btn" name="button" target="_blank" href="https://site.tkw.bz">Website</a>
 
 ### Ethan
 
