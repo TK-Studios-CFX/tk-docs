@@ -8,7 +8,7 @@
 
 ### 1. Dependencies
 
-TK Spikes has 2 dependencies:
+TK Clockins has 2 dependencies:
 
 - QBCore
 - tk-lib (Available from keymaster)
