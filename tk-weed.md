@@ -1,9 +1,3 @@
-<meta property="og:type" content="website">
-<meta property="og:title" content="TK Studios | Documentation">
-<meta property="og:url" content="https://docs.tkstudios.store/#/tk-weed">
-<meta property="og:image" content="https://docs.tkstudios.store/assets/tk-weed/banner.png">
-<meta property="og:description" content="TK Weed is a highly configurable weed farming, extraction and cooking resource with multiple growth stages, custom props and support for infinite custom strains of weed.">
-
 [Back To Home](/)
 
 # TK Weed
