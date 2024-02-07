@@ -412,6 +412,12 @@ const Lib = global.exports["tk-lib"].GetLib();
 
 ### Lib.Functions
 
+#### Object Placer
+
+```js
+let Coords = await Lib.Functions.ObjectPlacementUI("object_name"); // Returns false if invalid coords or cancelled.
+```
+
 #### Logger
 
 ##### Logger()
