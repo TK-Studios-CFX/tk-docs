@@ -23,17 +23,6 @@
 
 		<meta name="twitter:card" content="summary_large_image" />
 
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DL6VY4RD5P"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-
-			gtag("config", "G-DL6VY4RD5P");
-		</script>
 
 		<link type="application/json+oembed" href="/oembed.json" />
 
@@ -139,11 +128,26 @@
 				notFoundPage: "404.md",
 				loadNavbar: true,
 				maxLevel: 4,
+				ga: 'G-DL6VY4RD5P',
 			};
 		</script>
+
+
+		<!-- Google tag (gtag.js) -->
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL6VY4RD5P"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-DL6VY4RD5P");
+		</script> -->
 		<!-- Docsify v4 -->
 		<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 		<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 		<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gtag.min.js"></script>
 	</body>
 </html>

@@ -1,7 +1,3 @@
-<script>
-    gtag("config", 'page_title', 'TK-Clockins');
-</script>
-
 [Back To Home](/)
 
 # tk-clockins
