@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>TK Studios | Documentation</title>
 		<meta
 			name="description"
 			content="TK Studios is a small team of developers working to make high quality, customisable & affordable resources for FiveM and RedM."
@@ -113,6 +114,7 @@
 	</head>
 	<body>
 		<div id="app"></div>
+		
 		<script>
 			window.$docsify = {
 				name: "TK Studios",
@@ -127,15 +129,6 @@
 				loadNavbar: true,
 				maxLevel: 4,
 				ga: "G-DL6VY4RD5P",
-				plugins: [
-					function (hook, vm) {
-						hook.doneEach(function () {
-							// Invoked each time after the data is fully loaded, no arguments,
-							let file = vm.route.file
-							document.title += `TK Studios | ${file ? file.replace(".md", "").toUpperCase() : "Home"} `;
-						});
-					},
-				],
 			};
 
 
