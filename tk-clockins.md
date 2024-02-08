@@ -1,3 +1,7 @@
+<script>
+    document.CustomTitle = "Home2"
+</script>
+
 [Back To Home](/)
 
 # tk-clockins

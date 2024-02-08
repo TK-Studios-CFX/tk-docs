@@ -1,8 +1,8 @@
-<title>TK Studios | About</title>
+<title>Test</title>
 
 <img style="margin-top: 100px" src="./assets/images/banner.png">
 
-# TK Studios | About Us
+# About Us
 
 ## Introduction
 

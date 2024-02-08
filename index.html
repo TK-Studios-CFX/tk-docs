@@ -22,7 +22,6 @@
 
 		<meta name="twitter:card" content="summary_large_image" />
 
-
 		<link type="application/json+oembed" href="/oembed.json" />
 
 		<!-- Themes (light + dark) -->
@@ -114,11 +113,10 @@
 	</head>
 	<body>
 		<div id="app"></div>
-		<title>TK Studios | Documentation</title>
 		<script>
 			window.$docsify = {
-				name: "TK Studios | Documentation",
-				repo: "https://github.com/TK-Studios-CFX/tk-docs",
+				name: "TK Studios",
+				repo: "https://github.com/TK-Studios-CFX",
 				coverpage: true,
 				onlyCover: true,
 				coverpage: "cover.md",
@@ -128,10 +126,20 @@
 				notFoundPage: "404.md",
 				loadNavbar: true,
 				maxLevel: 4,
-				ga: 'G-DL6VY4RD5P',
+				ga: "G-DL6VY4RD5P",
+				plugins: [
+					function (hook, vm) {
+						hook.doneEach(function () {
+							// Invoked each time after the data is fully loaded, no arguments,
+							let file = vm.route.file
+							document.title += `TK Studios | ${file ? file.replace(".md", "").toUpperCase() : "Home"} `;
+						});
+					},
+				],
 			};
-		</script>
 
+
+		</script>
 
 		<!-- Google tag (gtag.js) -->
 		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-DL6VY4RD5P"></script>
